@@ -42,6 +42,7 @@ body{
 
 .nav li:hover{
     color: black;
+    background-color: aquamarine;
     font-style: bold;
 }
 
