@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* INDEX */
+
+body{
+    background-color: #FFCDB2;
+}
+
+.grilla1 {  
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    grid-template-areas:
+      "logo header header header"
+      "primeraSeccion primeraSeccion primeraSeccion primeraSeccion"
+      "tabla tabla tabla tabla"
+      "segundaSeccion segundaSeccion segundaSeccion segundaSeccion"
+      "footer footer footer footer";
+      background-color: #FFCDB2;
+      color: #6D6875;
+}
+
+.logo {
+    grid-area: logo;
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.nav { 
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    font-size: 200%;
+    padding-top: 25px;
+}
+
+.nav li:hover{
+    color: black;
+    background-color: black;
+    font-style: bold;
+
+}
+
+.nav li a{
+    align-items: auto;
+    padding: auto;
+    color: white;
+    font-style: bold;
+}
+
+.nav li{
+    list-style: none;
+    align-items: center;
+
+}
+
+.header { 
+    grid-area: header;
+    background-color: #B5838D;
+    color: black; 
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.primeraSeccion {
+    grid-area: primeraSeccion;
+     /* rem = 16px  */
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: black;
+    align-items: center;
+    justify-items: auto;
+    justify-content: center;
+}
+
+.primeraSeccion img{
+    max-width: 400px;
+}
+
+.textoIndex{
+    max-width: 400px;
+    text-align: left;
+}
+
+.tabla{
+    grid-area: tabla;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+
+}
+
+table{
+    background-color:#E5989B;
+    width: 800px;
+}
+
+table tr td{
+    text-align: center;
+}
+
+.segundaSeccion{
+    grid-area: segundaSeccion;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.seccionIndex02Texto{
+    max-width: 800px;
+    text-align: center;
+}
+
+.seccionIndex02Video{
+    margin-top: 10px;
+    max-width: 800px;
+}
+
+.footer {
+    grid-area: footer;
+    margin-top: 100px;
+    background-color: #B5838D;
+    height: 10vh;
+}
+
+.footer ol{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer ol li{
+    list-style: none;
+    align-items: center;
+}
+
+
+table tr{
+    color:black;
+}
+
+/* SERVICIOS */
+
+.grilla2 {  
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    grid-template-areas:
+      "logo header header header"
+      "bodi bodi bodi bodi"
+      "bodi bodi bodi bodi"
+      "bodi bodi bodi bodi"
+      "bodi bodi bodi bodi"
+      "footer footer footer footer";
+      background-color: #FFCDB2;
+      color: #6D6875;
+}
+
+.bodi{
+    grid-area: bodi;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.serviciosSeccion1{
+    grid-area: serviciosSeccion1;
+    background-color: coral;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 100px;
+    color: black;
+    max-width: 800px;
+    text-align: justify;
+}
+
+.serviciosSeccion2{
+    grid-area: serviciosSeccion2;
+    background-color: cyan;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 100px;
+    color: black;
+    max-width: 800px;
+    text-align: justify;
+}
+
+.serviciosSeccion3{
+    grid-area: serviciosSeccion3;
+    background-color: deeppink;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 100px;
+    color: black;
+    max-width: 800px;
+    text-align: justify;
+}
+
+.serviciosSeccion4{
+    grid-area: serviciosSeccion4;
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 100px;
+    color: black;
+    max-width: 800px;
+    text-align: justify;
+}
+
+/* GALERIA */
+
+.grilla3{  
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    grid-template-areas:
+      "logo header header header"
+      "galerias galerias galerias galerias"
+      "footer footer footer footer";
+      background-color: #FFCDB2;
+      color: #6D6875;
+}
+
+.galerias{
+    grid-area: galerias;
+    display: flex;
+    flex-direction: row;
+}
+
+#galeria01{
+    background-color: chocolate;
+    color: floralwhite;
+}
+
+#galeria02{
+    background-color: darkcyan;
+    color: darkorange;
+}
+
+#galeria03{
+   background-color:hotpink ; 
+   color: darkcyan;
+}
+
+#galeria04{
+    background-color: gold;
+    color: hotpink;
+}
+
+#galeria05{
+    background-color: mediumseagreen;
+    color: gold;
+}
+
+#galeria06{
+    background-color: aliceblue;
+    color: mediumseagreen;
+}
+
+#galeria07{
+    background-color: chocolate;
+    color: floralwhite;
+}
+
+#galeria08{
+    background-color: darkcyan;
+    color: darkorange;
+}
+
+#galeria09{
+   background-color:hotpink ; 
+   color: darkcyan;
+}
+
+#galeria10{
+    background-color: gold;
+    color: hotpink;
+}
+
+#galeria11{
+    background-color: mediumseagreen;
+    color: gold;
+}
+
+#galeria12{
+    background-color: aliceblue;
+    color: mediumseagreen;
+}
+
+#galeria13{
+    background-color: chocolate;
+    color: floralwhite;
+}
+
+#galeria14{
+    background-color: darkcyan;
+    color: darkorange;
+}
+
+#galeria15{
+   background-color:hotpink ; 
+   color: darkcyan;
+}
+
+#galeria16{
+    background-color: gold;
+    color: hotpink;
+}
+
+#galeria17{
+    background-color: mediumseagreen;
+    color: gold;
+}
+
+#galeria18{
+    background-color: aliceblue;
+    color: mediumseagreen;
+}
+
+
+
+
+
+@media(max-width:890px){
+    .grilla1{
+        grid-template-areas:
+        "logo logo logo logo"
+        "header header header header"
+        "primeraSeccion primeraSeccion primeraSeccion primeraSeccion"
+        "tabla tabla tabla tabla"
+        "segundaSeccion segundaSeccion segundaSeccion segundaSeccion"
+        "footer footer footer footer";
+    }
+
+    .logo{
+        margin: 10px;
+    }
+
+    .grilla2{
+        grid-template-areas:
+        "logo logo logo logo"
+        "header header header header"
+        "bodi bodi bodi bodi"
+        "bodi bodi bodi bodi"
+        "bodi bodi bodi bodi"
+        "bodi bodi bodi bodi"
+        "footer footer footer footer";
+    }
+}
