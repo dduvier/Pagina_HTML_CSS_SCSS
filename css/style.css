@@ -42,6 +42,10 @@ body{
 
 .nav li:hover{
     color: black;
+<<<<<<< HEAD
+=======
+    background-color: aquamarine;
+>>>>>>> modificacion
     font-style: bold;
 }
 
