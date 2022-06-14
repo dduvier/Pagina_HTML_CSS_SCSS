@@ -42,9 +42,11 @@ body{
 
 .nav li:hover{
     color: black;
-    background-color: black;
     font-style: bold;
+}
 
+.nav li a:hover{
+    font-size: 120%;
 }
 
 .nav li a{
@@ -52,6 +54,7 @@ body{
     padding: auto;
     color: white;
     font-style: bold;
+    transition: all 1s;
 }
 
 .nav li{
@@ -62,7 +65,7 @@ body{
 
 .header { 
     grid-area: header;
-    background-color: #B5838D;
+    background-image: linear-gradient(#B5838D, #E5989B, #B5838D);
     color: black; 
     height: 10vh;
     align-items: center;
