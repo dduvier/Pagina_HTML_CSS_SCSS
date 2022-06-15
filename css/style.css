@@ -30,27 +30,35 @@ body{
     margin-top: 15px;
 }
 
+.logoHeader a{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .nav { 
     display: flex;
     flex-direction: row;
-    height: 100%;
-    width: 100%;
     justify-content: space-around;
     font-size: 200%;
-    padding-top: 25px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.menuHeader{
+    height: 100%;
+    width: 100%;
 }
 
 .nav li:hover{
     color: black;
-<<<<<<< HEAD
-=======
-    background-color: aquamarine;
->>>>>>> modificacion
     font-style: bold;
 }
 
 .nav li a:hover{
     font-size: 120%;
+    font-style: bold;
+    color: black;
 }
 
 .nav li a{
@@ -59,6 +67,9 @@ body{
     color: white;
     font-style: bold;
     transition: all 1s;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-decoration: none;
 }
 
 .nav li{
