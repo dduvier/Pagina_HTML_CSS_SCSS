@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@import 'variables/colores';
+@import 'variables/tipografia';
+@import 'variables/tamanios';
+
+@import 'secciones/header';
+@import 'secciones/bodyIndex';
+@import 'secciones/bodyServicios';
+@import 'secciones/bodyContacto';
+@import 'secciones/footer';
