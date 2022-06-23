@@ -9,14 +9,16 @@
         margin-bottom: $gapSeccion;
         max-width: $anchoMain;
         font-family: $prompt;
+        text-align: justify;
         .seccionIndex01{
             margin-bottom: $gapSeccion;
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             .textoIndex{
                 max-width: $anchoMain/2;
                 padding-right: 20px;
-                text-align: justify;
+                // text-align: justify;
             }
             .imagenIndex{
                 img{
@@ -29,7 +31,7 @@
             flex-direction: column;
             margin-bottom: $gapSeccion;
             .seccionIndex02Texto p{
-                text-align: justify;
+                // text-align: justify;
                 margin-bottom: $gapSeccion/3;
             }
 
