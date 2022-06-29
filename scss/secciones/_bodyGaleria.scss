@@ -5,7 +5,49 @@
     align-items: center;
     min-height: 100vh;
     .mainGaleria{
-        margin-top: $gapSeccion;
-        margin-bottom: $gapSeccion;
+        @include initMain;
+        .tituloGaleria{
+            text-align: center;
+            margin-bottom: $gapSeccion/2;
+        }
+        .galeriaInstalaciones{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: $gapSeccion/2;
+            div{
+                img{
+                    max-width: 280px;
+                    margin: 10px;
+                    border: solid 1px black;
+                    transition: transform 1s;
+                    &:hover{
+                        transform: scale(1.5);
+                        border: solid 3px white;
+                    }
+                }
+            }
+        }
+        .galeriaEdificio{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            div{
+                img{
+                    max-width: 280px;
+                    margin: 10px;
+                    border: solid 1px black;
+                    transition: transform 1s;
+                    &:hover{
+                        transform: scale(1.5);
+                        border: solid 3px white;
+                    }
+                }
+            }
+        }
     }
 }

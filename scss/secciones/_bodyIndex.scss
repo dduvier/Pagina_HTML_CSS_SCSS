@@ -5,11 +5,37 @@
     align-items: center;
     min-height: 100vh;
     .mainIndex{
-        margin-top: $gapSeccion;
-        margin-bottom: $gapSeccion;
-        max-width: $anchoMain;
-        font-family: $prompt;
-        text-align: justify;
+        @include initMain;
+        .tituloIndex{
+            text-align: center;
+            h1{
+                text-decoration: underline;
+                font-weight: bold;
+                margin-bottom: $gapSeccion/3;
+            }
+            h2{
+                font-weight: bold;
+                text-decoration: none;
+                margin-bottom: $gapSeccion/3;
+            }
+            h3{
+                text-decoration: underline;
+                margin-bottom: $gapSeccion/3;
+            }
+        }
+        .contenedorCarrousel{
+            max-width: $anchoMain;
+            max-height: $altoCarrousel;
+            .carousel{
+                align-items: center;
+                margin-top: $gapSeccion/2;
+                margin-bottom: $gapSeccion;
+                border: solid 1px black;
+                &:hover{
+                    border: solid 2px white;
+                }
+            }
+        }
         .seccionIndex01{
             margin-bottom: $gapSeccion;
             display: flex;
@@ -23,6 +49,10 @@
             .imagenIndex{
                 img{
                     max-width: $anchoMain/2;
+                    border: solid 1px black;
+                    &:hover{
+                        border: solid 1px white;
+                    }
                 }
             }
         }

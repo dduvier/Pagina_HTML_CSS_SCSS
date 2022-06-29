@@ -1,8 +1,6 @@
 .bodyContacto{
     background-image: linear-gradient(90deg, $colorGrad1 0%, $fondo 50%, $colorGrad1 100%);
-    .container{
-        margin-top: $gapSeccion;
-        margin-bottom: $gapSeccion;
-        max-width: $anchoMain;
+    .mainContacto{
+        @include initMain;
     }
 }

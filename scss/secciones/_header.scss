@@ -27,6 +27,11 @@
             font-size: 250%;
             margin-left: $marginLogo;
             margin-right: $marginLogo;
+            transition: all 0.5s;
+            &:hover{
+                font-weight: bold !important;
+                font-size: 260% !important;
+            }
         }       
     }
 }

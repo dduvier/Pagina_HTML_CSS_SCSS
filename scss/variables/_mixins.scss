@@ -1,0 +1,9 @@
+@mixin initMain{
+    margin-top: $gapSeccion;
+    margin-bottom: $gapSeccion;
+    max-width: $anchoMain;
+    font-family: $prompt;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -5,10 +5,7 @@
     align-items: center;
     min-height: 100vh;
     .mainServicios{
-        margin-top: $gapSeccion;
-        margin-bottom: $gapSeccion;
-        max-width: $anchoMain;
-        font-family: $prompt;
+        @include initMain;
         section{
             text-align: justify;
             margin-bottom: $gapSeccion;

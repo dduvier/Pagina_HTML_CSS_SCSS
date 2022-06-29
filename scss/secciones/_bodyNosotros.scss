@@ -5,10 +5,6 @@
     align-items: center;
     min-height: 100vh;
     .mainNosotros{
-        margin-top: $gapSeccion;
-        margin-bottom: $gapSeccion;
-        max-width: $anchoMain;
-        font-family: $prompt;
-        text-align: justify;
+        @include initMain;
     }
 }

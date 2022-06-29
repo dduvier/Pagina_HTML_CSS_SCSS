@@ -27,7 +27,11 @@
       font-family: "Pacifico", cursive;
       font-size: 250%;
       margin-left: 60px;
-      margin-right: 60px; }
+      margin-right: 60px;
+      transition: all 0.5s; }
+      .header .navbarFondo .logo:hover {
+        font-weight: bold !important;
+        font-size: 260% !important; }
 
 .bodyIndex {
   background-image: linear-gradient(90deg, #ff9a82 0%, #ffd2b9 50%, #ff9a82 100%);
@@ -40,7 +44,32 @@
     margin-bottom: 120px;
     max-width: 900px;
     font-family: "Prompt", sans-serif;
-    text-align: justify; }
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto; }
+    .bodyIndex .mainIndex .tituloIndex {
+      text-align: center; }
+      .bodyIndex .mainIndex .tituloIndex h1 {
+        text-decoration: underline;
+        font-weight: bold;
+        margin-bottom: 40px; }
+      .bodyIndex .mainIndex .tituloIndex h2 {
+        font-weight: bold;
+        text-decoration: none;
+        margin-bottom: 40px; }
+      .bodyIndex .mainIndex .tituloIndex h3 {
+        text-decoration: underline;
+        margin-bottom: 40px; }
+    .bodyIndex .mainIndex .contenedorCarrousel {
+      max-width: 900px;
+      max-height: 600px; }
+      .bodyIndex .mainIndex .contenedorCarrousel .carousel {
+        align-items: center;
+        margin-top: 60px;
+        margin-bottom: 120px;
+        border: solid 1px black; }
+        .bodyIndex .mainIndex .contenedorCarrousel .carousel:hover {
+          border: solid 2px white; }
     .bodyIndex .mainIndex .seccionIndex01 {
       margin-bottom: 120px;
       display: flex;
@@ -50,7 +79,10 @@
         max-width: 450px;
         padding-right: 20px; }
       .bodyIndex .mainIndex .seccionIndex01 .imagenIndex img {
-        max-width: 450px; }
+        max-width: 450px;
+        border: solid 1px black; }
+        .bodyIndex .mainIndex .seccionIndex01 .imagenIndex img:hover {
+          border: solid 1px white; }
     .bodyIndex .mainIndex .seccionIndex02 {
       display: flex;
       flex-direction: column;
@@ -81,17 +113,24 @@
     margin-top: 120px;
     margin-bottom: 120px;
     max-width: 900px;
-    font-family: "Prompt", sans-serif; }
+    font-family: "Prompt", sans-serif;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto; }
     .bodyServicios .mainServicios section {
       text-align: justify;
       margin-bottom: 120px; }
 
 .bodyContacto {
   background-image: linear-gradient(90deg, #ff9a82 0%, #ffd2b9 50%, #ff9a82 100%); }
-  .bodyContacto .container {
+  .bodyContacto .mainContacto {
     margin-top: 120px;
     margin-bottom: 120px;
-    max-width: 900px; }
+    max-width: 900px;
+    font-family: "Prompt", sans-serif;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto; }
 
 .bodyGaleria {
   background-image: linear-gradient(90deg, #ff9a82 0%, #ffd2b9 50%, #ff9a82 100%);
@@ -101,7 +140,44 @@
   min-height: 100vh; }
   .bodyGaleria .mainGaleria {
     margin-top: 120px;
-    margin-bottom: 120px; }
+    margin-bottom: 120px;
+    max-width: 900px;
+    font-family: "Prompt", sans-serif;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto; }
+    .bodyGaleria .mainGaleria .tituloGaleria {
+      text-align: center;
+      margin-bottom: 60px; }
+    .bodyGaleria .mainGaleria .galeriaInstalaciones {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      margin-bottom: 60px; }
+      .bodyGaleria .mainGaleria .galeriaInstalaciones div img {
+        max-width: 280px;
+        margin: 10px;
+        border: solid 1px black;
+        transition: transform 1s; }
+        .bodyGaleria .mainGaleria .galeriaInstalaciones div img:hover {
+          transform: scale(1.5);
+          border: solid 3px white; }
+    .bodyGaleria .mainGaleria .galeriaEdificio {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around; }
+      .bodyGaleria .mainGaleria .galeriaEdificio div img {
+        max-width: 280px;
+        margin: 10px;
+        border: solid 1px black;
+        transition: transform 1s; }
+        .bodyGaleria .mainGaleria .galeriaEdificio div img:hover {
+          transform: scale(1.5);
+          border: solid 3px white; }
 
 .bodyNosotros {
   background-image: linear-gradient(90deg, #ff9a82 0%, #ffd2b9 50%, #ff9a82 100%);
@@ -114,7 +190,9 @@
     margin-bottom: 120px;
     max-width: 900px;
     font-family: "Prompt", sans-serif;
-    text-align: justify; }
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto; }
 
 .footer {
   background-color: #E5989B;
