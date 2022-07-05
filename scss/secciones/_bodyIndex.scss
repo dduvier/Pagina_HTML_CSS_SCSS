@@ -35,6 +35,13 @@
                     border: solid 2px white;
                 }
             }
+            @media(max-width: 950px){
+                max-width: 600px;
+                margin: auto;
+            }
+            @media(max-width: 600px){
+                max-width: 450px;
+            }
         }
         .seccionIndex01{
             margin-bottom: $gapSeccion;
@@ -63,6 +70,11 @@
             .seccionIndex02Texto p{
                 // text-align: justify;
                 margin-bottom: $gapSeccion/3;
+            }
+            .seccionIndex02Video{
+                @media(max-width: 950px){
+                    visibility: hidden;
+                }
             }
 
         }

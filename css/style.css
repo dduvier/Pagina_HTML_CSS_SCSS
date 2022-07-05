@@ -70,6 +70,13 @@
         border: solid 1px black; }
         .bodyIndex .mainIndex .contenedorCarrousel .carousel:hover {
           border: solid 2px white; }
+      @media (max-width: 950px) {
+        .bodyIndex .mainIndex .contenedorCarrousel {
+          max-width: 600px;
+          margin: auto; } }
+      @media (max-width: 600px) {
+        .bodyIndex .mainIndex .contenedorCarrousel {
+          max-width: 450px; } }
     .bodyIndex .mainIndex .seccionIndex01 {
       margin-bottom: 120px;
       display: flex;
@@ -89,6 +96,9 @@
       margin-bottom: 120px; }
       .bodyIndex .mainIndex .seccionIndex02 .seccionIndex02Texto p {
         margin-bottom: 40px; }
+      @media (max-width: 950px) {
+        .bodyIndex .mainIndex .seccionIndex02 .seccionIndex02Video {
+          visibility: hidden; } }
     .bodyIndex .mainIndex .tablaSeccion {
       display: flex;
       flex-direction: column; }
