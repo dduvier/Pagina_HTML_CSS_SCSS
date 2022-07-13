@@ -6,8 +6,11 @@
     min-height: 100vh;
     .mainIndex{
         @include initMain;
+        margin-right: 20px;
+        margin-left: 20px;
         .tituloIndex{
             text-align: center;
+            @include cardOpacidad;
             h1{
                 text-decoration: underline;
                 font-weight: bold;
@@ -48,44 +51,45 @@
             display: flex;
             flex-wrap: wrap;
             align-items: center;
+            @include cardOpacidad;
             .textoIndex{
-                max-width: $anchoMain/2;
+                max-width: ($anchoMain/2)-20px;
                 padding-right: 20px;
-                // text-align: justify;
             }
             .imagenIndex{
                 img{
-                    max-width: $anchoMain/2;
+                    max-width: ($anchoMain/2)-20px;
                     border: solid 1px black;
                     &:hover{
                         border: solid 1px white;
                     }
                 }
             }
+            @media(max-width: 950px){
+                flex-direction: column;
+            }
         }
         .seccionIndex02{
             display: flex;
             flex-direction: column;
             margin-bottom: $gapSeccion;
-            .seccionIndex02Texto p{
-                // text-align: justify;
+            @include cardOpacidad;
+            p{
                 margin-bottom: $gapSeccion/3;
+                max-width: $anchoMain;
             }
-            .seccionIndex02Video{
-                @media(max-width: 950px){
-                    visibility: hidden;
-                }
-            }
-
         }
         .tablaSeccion{
             display: flex;
             flex-direction: column;
+            @include cardOpacidad;
             h3{
                 margin-bottom: $gapSeccion/4;
             }
             table{
                 border: solid black 2px;
+                margin-bottom: $gapSeccion/4;
+                background-color: rgba(255,255,255,0.2);
                 tr{
                     td{
                         border: solid black 1px;
@@ -98,5 +102,5 @@
                 }
             }
         }
-    }
+     }
 }

@@ -6,9 +6,29 @@
     min-height: 100vh;
     .mainServicios{
         @include initMain;
+        margin-left: 20px;
+        margin-right: 20px;
         section{
             text-align: justify;
             margin-bottom: $gapSeccion;
+            @include cardOpacidad;
+            article{
+                img{
+                    padding: 15px;
+                    display: block;
+                    max-width: 600px;
+                    margin: 0 auto;
+                    @media(max-width: 680px){
+                        max-width: 400px;
+                    }
+                    @media(max-width: 500px){
+                        max-width: 300px;
+                    }
+                    &:hover{
+                        opacity: 0.9;
+                    }
+                }
+            }
         }
     }
 }

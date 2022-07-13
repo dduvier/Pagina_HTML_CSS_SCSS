@@ -2,5 +2,13 @@
     background-image: linear-gradient(90deg, $colorGrad1 0%, $fondo 50%, $colorGrad1 100%);
     .mainContacto{
         @include initMain;
+        @include cardOpacidad;
+        padding-top: 40px;
+        .tituloContacto{
+            margin-bottom: $gapSeccion;
+            h1{
+                margin-bottom: $gapSeccion/4;
+            }
+        }
     }
 }
