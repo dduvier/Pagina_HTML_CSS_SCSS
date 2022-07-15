@@ -7,7 +7,11 @@
         .tituloContacto{
             margin-bottom: $gapSeccion;
             h1{
+                text-align: center;
                 margin-bottom: $gapSeccion/4;
+            }
+            h3{
+                text-align: center;
             }
         }
     }

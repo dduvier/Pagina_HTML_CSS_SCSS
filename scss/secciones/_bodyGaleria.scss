@@ -9,6 +9,7 @@
         .tituloGaleria{
             text-align: center;
             margin-bottom: $gapSeccion/2;
+            @include cardOpacidad;
         }
         .divOpacidad{
             // padding: 20px;

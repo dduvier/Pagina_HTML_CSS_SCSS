@@ -201,7 +201,10 @@
     .bodyContacto .mainContacto .tituloContacto {
       margin-bottom: 120px; }
       .bodyContacto .mainContacto .tituloContacto h1 {
+        text-align: center;
         margin-bottom: 30px; }
+      .bodyContacto .mainContacto .tituloContacto h3 {
+        text-align: center; }
 
 .bodyGaleria {
   background-image: linear-gradient(90deg, #ff9a82 0%, #ffd2b9 50%, #ff9a82 100%);
@@ -219,7 +222,13 @@
     margin-right: auto; }
     .bodyGaleria .mainGaleria .tituloGaleria {
       text-align: center;
-      margin-bottom: 60px; }
+      margin-bottom: 60px;
+      padding: 20px;
+      border-radius: 20px;
+      max-width: 900px;
+      background-color: rgba(255, 255, 255, 0.15); }
+      .bodyGaleria .mainGaleria .tituloGaleria:hover {
+        background-color: rgba(255, 255, 255, 0.3); }
     .bodyGaleria .mainGaleria .divOpacidad {
       padding: 20px;
       border-radius: 20px;
@@ -274,7 +283,57 @@
     font-family: "Prompt", sans-serif;
     text-align: justify;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    margin-right: 20px;
+    margin-left: 20px; }
+    .bodyNosotros .mainNosotros .tituloNosotros {
+      text-align: center;
+      margin-bottom: 60px;
+      padding: 20px;
+      border-radius: 20px;
+      max-width: 900px;
+      background-color: rgba(255, 255, 255, 0.15); }
+      .bodyNosotros .mainNosotros .tituloNosotros:hover {
+        background-color: rgba(255, 255, 255, 0.3); }
+    .bodyNosotros .mainNosotros .sectionNosotros div article {
+      margin-bottom: 30px; }
+      .bodyNosotros .mainNosotros .sectionNosotros div article h3 {
+        margin-bottom: 40px; }
+      .bodyNosotros .mainNosotros .sectionNosotros div article img {
+        max-width: 350px;
+        position: relative;
+        left: 250px; }
+      .bodyNosotros .mainNosotros .sectionNosotros div article p {
+        margin-top: 40px;
+        display: inline-block; }
+    .bodyNosotros .mainNosotros .sectionNosotros div .nosotrosArticulo1 {
+      padding: 20px;
+      border-radius: 20px;
+      max-width: 900px;
+      background-color: rgba(255, 255, 255, 0.15);
+      margin-top: 120px; }
+      .bodyNosotros .mainNosotros .sectionNosotros div .nosotrosArticulo1:hover {
+        background-color: rgba(255, 255, 255, 0.3); }
+    .bodyNosotros .mainNosotros .sectionNosotros div .nosotrosArticulo2 {
+      padding: 20px;
+      border-radius: 20px;
+      max-width: 900px;
+      background-color: rgba(255, 255, 255, 0.15);
+      margin-top: 120px; }
+      .bodyNosotros .mainNosotros .sectionNosotros div .nosotrosArticulo2:hover {
+        background-color: rgba(255, 255, 255, 0.3); }
+    .bodyNosotros .mainNosotros .sectionMapa {
+      margin-top: 120px;
+      padding: 20px;
+      border-radius: 20px;
+      max-width: 900px;
+      background-color: rgba(255, 255, 255, 0.15); }
+      .bodyNosotros .mainNosotros .sectionMapa:hover {
+        background-color: rgba(255, 255, 255, 0.3); }
+      .bodyNosotros .mainNosotros .sectionMapa h1 {
+        margin-bottom: 30px; }
+      .bodyNosotros .mainNosotros .sectionMapa h4 {
+        margin-bottom: 40px; }
 
 .footer {
   background-color: #E5989B;

@@ -6,5 +6,50 @@
     min-height: 100vh;
     .mainNosotros{
         @include initMain;
+        margin-right: 20px;
+        margin-left: 20px;
+        .tituloNosotros{
+            text-align: center;
+            margin-bottom: $gapSeccion/2;
+            @include cardOpacidad;
+        }
+        .sectionNosotros{
+                div{
+                    article{
+                        h3{
+                            margin-bottom: $gapSeccion/3;
+                        }
+                        margin-bottom: $gapSeccion/4;
+                        img{
+                            max-width: 350px;
+                            position: relative;
+                            left: 250px;
+                        }
+                        p{
+                            margin-top: $gapSeccion/3;
+                            display: inline-block;
+                        }
+                    }
+                    .nosotrosArticulo1{
+                        @include cardOpacidad;
+                        margin-top: $gapSeccion;
+                    }
+                    .nosotrosArticulo2{
+                        @include cardOpacidad;
+                        margin-top: $gapSeccion;
+                    }
+                    
+                }
+        }
+        .sectionMapa{
+            margin-top: $gapSeccion;
+            @include cardOpacidad;
+            h1{
+                margin-bottom: $gapSeccion/4;
+            }
+            h4{
+                margin-bottom: $gapSeccion/3;
+            }
+        }
     }
 }
